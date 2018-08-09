@@ -1,16 +1,16 @@
 import React, {Component} from 'react';
 import {Button, Input} from "semantic-ui-react";
+import {Link} from "react-router-dom";
 
 class Home extends Component {
     render() {
         return (
             <div className="Home">
                 <div className="central-elm">
-                    <Input placeholder='Game code' className="center-text" style={{width: 150}}/>
-                    <Button secondary style={{width: 150}}>Join game</Button>
-                    <div className="separating-rule">
-                        <hr width="50px"/>OR<hr width="50px"/>
-                    </div>
+                    <Input placeholder='Game code' className="center-text" />
+                    <Button secondary as={Link} to="/game/123456">Join game</Button>
+                    <span className="or-divide hr-title"><hr/>OR<hr/></span>
+                    <Button secondary as={Link} to="/create">Create game</Button>
                 </div>
             </div>
         )

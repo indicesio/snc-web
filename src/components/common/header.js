@@ -20,7 +20,7 @@ export default class Header extends Component {
         }
 
         return (
-            <Menu inverted>
+            <Menu inverted className="main-header">
                 <Menu.Item
                     as={Link}
                     to="/"

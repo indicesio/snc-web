@@ -7,6 +7,7 @@ import './App.css'
 import Header from './components/common/header'
 import Routing from './components/common/routing'
 import {Provider} from 'react-redux'
+import {Container} from "semantic-ui-react";
 
 const history = createBrowserHistory();
 const initialState = {};
@@ -28,9 +29,9 @@ class App extends Component {
                 <ConnectedRouter history={history}>
                     <div className="App">
                         <Header defaultActiveItem="home" gameCode={"123456"} />
-                        <div>
+                        <Container className="App-Content">
                             <Routing />
-                        </div>
+                        </Container>
                     </div>
                 </ConnectedRouter>
             </Provider>
