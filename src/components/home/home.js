@@ -1,11 +1,7 @@
 import React, {Component} from 'react';
-import {Button, Grid, Input} from "semantic-ui-react";
+import {Button, Input} from "semantic-ui-react";
 
 class Home extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div className="Home">
